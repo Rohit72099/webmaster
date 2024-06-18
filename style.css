@@ -1,0 +1,106 @@
+
+
+body{
+    margin: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:image-set("img1.avif");
+
+}
+
+.content p{
+        color: #ff0000;
+        text-align: center;
+        font-size: x-large;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-top: 30px;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #d8744c;
+}
+.topnav a{
+    float:left;
+    color: #e40f0f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color: #ddd;
+    color:black;
+}
+.topnav a.active{
+    background-color: #fd4b05;
+    color: white;
+}
+.topnav .search-container{
+    float: right;
+
+}
+.topnav input[type=text]{
+
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    
+}
+.topnav .search-container button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #b95d32;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+.topnav .search-container button:hover{
+    background: #ccc;
+}
+
+.btn button{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    
+    border-radius: 5px;
+    margin-top: 400px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.btn button:hover{
+    color:rgb(15, 224, 224);
+}
+
+
+
+@media screen and (max-width:600px){
+    .topnav .search-container{
+        float: none;
+    }
+
+    .topnav a, .topnav input[type=text], .topnav .search-container button{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text]{
+        border:1px solid #ccc;
+    }
+    
+}
+ 
